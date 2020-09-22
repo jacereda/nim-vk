@@ -14354,60 +14354,60 @@ proc mkVkFramebufferAttachmentsCreateInfo*(
 
 
 # Bit ops
-func or(a, b: VkFramebufferCreateFlagBits): VkFramebufferCreateFlagBits {.borrow.}
-func or(a, b: VkRenderPassCreateFlagBits): VkRenderPassCreateFlagBits {.borrow.}
-func or(a, b: VkSamplerCreateFlagBits): VkSamplerCreateFlagBits {.borrow.}
-func or(a, b: VkPipelineCacheCreateFlagBits): VkPipelineCacheCreateFlagBits {.borrow.}
-func or(a, b: VkPipelineShaderStageCreateFlagBits): VkPipelineShaderStageCreateFlagBits {.borrow.}
-func or(a, b: VkDescriptorSetLayoutCreateFlagBits): VkDescriptorSetLayoutCreateFlagBits {.borrow.}
-func or(a, b: VkDeviceQueueCreateFlagBits): VkDeviceQueueCreateFlagBits {.borrow.}
-func or(a, b: VkBufferCreateFlagBits): VkBufferCreateFlagBits {.borrow.}
-func or(a, b: VkBufferUsageFlagBits): VkBufferUsageFlagBits {.borrow.}
-func or(a, b: VkColorComponentFlagBits): VkColorComponentFlagBits {.borrow.}
-func or(a, b: VkCommandPoolCreateFlagBits): VkCommandPoolCreateFlagBits {.borrow.}
-func or(a, b: VkCommandPoolResetFlagBits): VkCommandPoolResetFlagBits {.borrow.}
-func or(a, b: VkCommandBufferResetFlagBits): VkCommandBufferResetFlagBits {.borrow.}
-func or(a, b: VkCommandBufferUsageFlagBits): VkCommandBufferUsageFlagBits {.borrow.}
-func or(a, b: VkCullModeFlagBits): VkCullModeFlagBits {.borrow.}
-func or(a, b: VkFenceCreateFlagBits): VkFenceCreateFlagBits {.borrow.}
-func or(a, b: VkFormatFeatureFlagBits): VkFormatFeatureFlagBits {.borrow.}
-func or(a, b: VkImageAspectFlagBits): VkImageAspectFlagBits {.borrow.}
-func or(a, b: VkImageCreateFlagBits): VkImageCreateFlagBits {.borrow.}
-func or(a, b: VkImageUsageFlagBits): VkImageUsageFlagBits {.borrow.}
-func or(a, b: VkImageViewCreateFlagBits): VkImageViewCreateFlagBits {.borrow.}
-func or(a, b: VkMemoryHeapFlagBits): VkMemoryHeapFlagBits {.borrow.}
-func or(a, b: VkAccessFlagBits): VkAccessFlagBits {.borrow.}
-func or(a, b: VkMemoryPropertyFlagBits): VkMemoryPropertyFlagBits {.borrow.}
-func or(a, b: VkPipelineCreateFlagBits): VkPipelineCreateFlagBits {.borrow.}
-func or(a, b: VkQueryControlFlagBits): VkQueryControlFlagBits {.borrow.}
-func or(a, b: VkQueryPipelineStatisticFlagBits): VkQueryPipelineStatisticFlagBits {.borrow.}
-func or(a, b: VkQueryResultFlagBits): VkQueryResultFlagBits {.borrow.}
-func or(a, b: VkQueueFlagBits): VkQueueFlagBits {.borrow.}
-func or(a, b: VkShaderStageFlagBits): VkShaderStageFlagBits {.borrow.}
-func or(a, b: VkSparseMemoryBindFlagBits): VkSparseMemoryBindFlagBits {.borrow.}
-func or(a, b: VkStencilFaceFlagBits): VkStencilFaceFlagBits {.borrow.}
-func or(a, b: VkPipelineStageFlagBits): VkPipelineStageFlagBits {.borrow.}
-func or(a, b: VkSparseImageFormatFlagBits): VkSparseImageFormatFlagBits {.borrow.}
-func or(a, b: VkSampleCountFlagBits): VkSampleCountFlagBits {.borrow.}
-func or(a, b: VkAttachmentDescriptionFlagBits): VkAttachmentDescriptionFlagBits {.borrow.}
-func or(a, b: VkDescriptorPoolCreateFlagBits): VkDescriptorPoolCreateFlagBits {.borrow.}
-func or(a, b: VkDependencyFlagBits): VkDependencyFlagBits {.borrow.}
-func or(a, b: VkSubpassDescriptionFlagBits): VkSubpassDescriptionFlagBits {.borrow.}
-func or(a, b: VkResolveModeFlagBits): VkResolveModeFlagBits {.borrow.}
-func or(a, b: VkDescriptorBindingFlagBits): VkDescriptorBindingFlagBits {.borrow.}
-func or(a, b: VkSemaphoreWaitFlagBits): VkSemaphoreWaitFlagBits {.borrow.}
-func or(a, b: VkShaderModuleCreateFlagBits): VkShaderModuleCreateFlagBits {.borrow.}
-func or(a, b: VkExternalMemoryHandleTypeFlagBits): VkExternalMemoryHandleTypeFlagBits {.borrow.}
-func or(a, b: VkExternalMemoryFeatureFlagBits): VkExternalMemoryFeatureFlagBits {.borrow.}
-func or(a, b: VkExternalSemaphoreHandleTypeFlagBits): VkExternalSemaphoreHandleTypeFlagBits {.borrow.}
-func or(a, b: VkExternalSemaphoreFeatureFlagBits): VkExternalSemaphoreFeatureFlagBits {.borrow.}
-func or(a, b: VkSemaphoreImportFlagBits): VkSemaphoreImportFlagBits {.borrow.}
-func or(a, b: VkExternalFenceHandleTypeFlagBits): VkExternalFenceHandleTypeFlagBits {.borrow.}
-func or(a, b: VkExternalFenceFeatureFlagBits): VkExternalFenceFeatureFlagBits {.borrow.}
-func or(a, b: VkFenceImportFlagBits): VkFenceImportFlagBits {.borrow.}
-func or(a, b: VkPeerMemoryFeatureFlagBits): VkPeerMemoryFeatureFlagBits {.borrow.}
-func or(a, b: VkMemoryAllocateFlagBits): VkMemoryAllocateFlagBits {.borrow.}
-func or(a, b: VkSubgroupFeatureFlagBits): VkSubgroupFeatureFlagBits {.borrow.}
+func `or`(a, b: VkFramebufferCreateFlagBits): VkFramebufferCreateFlagBits = (a.uint32 or b.uint32).VkFramebufferCreateFlagBits
+func `or`(a, b: VkRenderPassCreateFlagBits): VkRenderPassCreateFlagBits = (a.uint32 or b.uint32).VkRenderPassCreateFlagBits
+func `or`(a, b: VkSamplerCreateFlagBits): VkSamplerCreateFlagBits = (a.uint32 or b.uint32).VkSamplerCreateFlagBits
+func `or`(a, b: VkPipelineCacheCreateFlagBits): VkPipelineCacheCreateFlagBits = (a.uint32 or b.uint32).VkPipelineCacheCreateFlagBits
+func `or`(a, b: VkPipelineShaderStageCreateFlagBits): VkPipelineShaderStageCreateFlagBits = (a.uint32 or b.uint32).VkPipelineShaderStageCreateFlagBits
+func `or`(a, b: VkDescriptorSetLayoutCreateFlagBits): VkDescriptorSetLayoutCreateFlagBits = (a.uint32 or b.uint32).VkDescriptorSetLayoutCreateFlagBits
+func `or`(a, b: VkDeviceQueueCreateFlagBits): VkDeviceQueueCreateFlagBits = (a.uint32 or b.uint32).VkDeviceQueueCreateFlagBits
+func `or`(a, b: VkBufferCreateFlagBits): VkBufferCreateFlagBits = (a.uint32 or b.uint32).VkBufferCreateFlagBits
+func `or`(a, b: VkBufferUsageFlagBits): VkBufferUsageFlagBits = (a.uint32 or b.uint32).VkBufferUsageFlagBits
+func `or`(a, b: VkColorComponentFlagBits): VkColorComponentFlagBits = (a.uint32 or b.uint32).VkColorComponentFlagBits
+func `or`(a, b: VkCommandPoolCreateFlagBits): VkCommandPoolCreateFlagBits = (a.uint32 or b.uint32).VkCommandPoolCreateFlagBits
+func `or`(a, b: VkCommandPoolResetFlagBits): VkCommandPoolResetFlagBits = (a.uint32 or b.uint32).VkCommandPoolResetFlagBits
+func `or`(a, b: VkCommandBufferResetFlagBits): VkCommandBufferResetFlagBits = (a.uint32 or b.uint32).VkCommandBufferResetFlagBits
+func `or`(a, b: VkCommandBufferUsageFlagBits): VkCommandBufferUsageFlagBits = (a.uint32 or b.uint32).VkCommandBufferUsageFlagBits
+func `or`(a, b: VkCullModeFlagBits): VkCullModeFlagBits = (a.uint32 or b.uint32).VkCullModeFlagBits
+func `or`(a, b: VkFenceCreateFlagBits): VkFenceCreateFlagBits = (a.uint32 or b.uint32).VkFenceCreateFlagBits
+func `or`(a, b: VkFormatFeatureFlagBits): VkFormatFeatureFlagBits = (a.uint32 or b.uint32).VkFormatFeatureFlagBits
+func `or`(a, b: VkImageAspectFlagBits): VkImageAspectFlagBits = (a.uint32 or b.uint32).VkImageAspectFlagBits
+func `or`(a, b: VkImageCreateFlagBits): VkImageCreateFlagBits = (a.uint32 or b.uint32).VkImageCreateFlagBits
+func `or`(a, b: VkImageUsageFlagBits): VkImageUsageFlagBits = (a.uint32 or b.uint32).VkImageUsageFlagBits
+func `or`(a, b: VkImageViewCreateFlagBits): VkImageViewCreateFlagBits = (a.uint32 or b.uint32).VkImageViewCreateFlagBits
+func `or`(a, b: VkMemoryHeapFlagBits): VkMemoryHeapFlagBits = (a.uint32 or b.uint32).VkMemoryHeapFlagBits
+func `or`(a, b: VkAccessFlagBits): VkAccessFlagBits = (a.uint32 or b.uint32).VkAccessFlagBits
+func `or`(a, b: VkMemoryPropertyFlagBits): VkMemoryPropertyFlagBits = (a.uint32 or b.uint32).VkMemoryPropertyFlagBits
+func `or`(a, b: VkPipelineCreateFlagBits): VkPipelineCreateFlagBits = (a.uint32 or b.uint32).VkPipelineCreateFlagBits
+func `or`(a, b: VkQueryControlFlagBits): VkQueryControlFlagBits = (a.uint32 or b.uint32).VkQueryControlFlagBits
+func `or`(a, b: VkQueryPipelineStatisticFlagBits): VkQueryPipelineStatisticFlagBits = (a.uint32 or b.uint32).VkQueryPipelineStatisticFlagBits
+func `or`(a, b: VkQueryResultFlagBits): VkQueryResultFlagBits = (a.uint32 or b.uint32).VkQueryResultFlagBits
+func `or`(a, b: VkQueueFlagBits): VkQueueFlagBits = (a.uint32 or b.uint32).VkQueueFlagBits
+func `or`(a, b: VkShaderStageFlagBits): VkShaderStageFlagBits = (a.uint32 or b.uint32).VkShaderStageFlagBits
+func `or`(a, b: VkSparseMemoryBindFlagBits): VkSparseMemoryBindFlagBits = (a.uint32 or b.uint32).VkSparseMemoryBindFlagBits
+func `or`(a, b: VkStencilFaceFlagBits): VkStencilFaceFlagBits = (a.uint32 or b.uint32).VkStencilFaceFlagBits
+func `or`(a, b: VkPipelineStageFlagBits): VkPipelineStageFlagBits = (a.uint32 or b.uint32).VkPipelineStageFlagBits
+func `or`(a, b: VkSparseImageFormatFlagBits): VkSparseImageFormatFlagBits = (a.uint32 or b.uint32).VkSparseImageFormatFlagBits
+func `or`(a, b: VkSampleCountFlagBits): VkSampleCountFlagBits = (a.uint32 or b.uint32).VkSampleCountFlagBits
+func `or`(a, b: VkAttachmentDescriptionFlagBits): VkAttachmentDescriptionFlagBits = (a.uint32 or b.uint32).VkAttachmentDescriptionFlagBits
+func `or`(a, b: VkDescriptorPoolCreateFlagBits): VkDescriptorPoolCreateFlagBits = (a.uint32 or b.uint32).VkDescriptorPoolCreateFlagBits
+func `or`(a, b: VkDependencyFlagBits): VkDependencyFlagBits = (a.uint32 or b.uint32).VkDependencyFlagBits
+func `or`(a, b: VkSubpassDescriptionFlagBits): VkSubpassDescriptionFlagBits = (a.uint32 or b.uint32).VkSubpassDescriptionFlagBits
+func `or`(a, b: VkResolveModeFlagBits): VkResolveModeFlagBits = (a.uint32 or b.uint32).VkResolveModeFlagBits
+func `or`(a, b: VkDescriptorBindingFlagBits): VkDescriptorBindingFlagBits = (a.uint32 or b.uint32).VkDescriptorBindingFlagBits
+func `or`(a, b: VkSemaphoreWaitFlagBits): VkSemaphoreWaitFlagBits = (a.uint32 or b.uint32).VkSemaphoreWaitFlagBits
+func `or`(a, b: VkShaderModuleCreateFlagBits): VkShaderModuleCreateFlagBits = (a.uint32 or b.uint32).VkShaderModuleCreateFlagBits
+func `or`(a, b: VkExternalMemoryHandleTypeFlagBits): VkExternalMemoryHandleTypeFlagBits = (a.uint32 or b.uint32).VkExternalMemoryHandleTypeFlagBits
+func `or`(a, b: VkExternalMemoryFeatureFlagBits): VkExternalMemoryFeatureFlagBits = (a.uint32 or b.uint32).VkExternalMemoryFeatureFlagBits
+func `or`(a, b: VkExternalSemaphoreHandleTypeFlagBits): VkExternalSemaphoreHandleTypeFlagBits = (a.uint32 or b.uint32).VkExternalSemaphoreHandleTypeFlagBits
+func `or`(a, b: VkExternalSemaphoreFeatureFlagBits): VkExternalSemaphoreFeatureFlagBits = (a.uint32 or b.uint32).VkExternalSemaphoreFeatureFlagBits
+func `or`(a, b: VkSemaphoreImportFlagBits): VkSemaphoreImportFlagBits = (a.uint32 or b.uint32).VkSemaphoreImportFlagBits
+func `or`(a, b: VkExternalFenceHandleTypeFlagBits): VkExternalFenceHandleTypeFlagBits = (a.uint32 or b.uint32).VkExternalFenceHandleTypeFlagBits
+func `or`(a, b: VkExternalFenceFeatureFlagBits): VkExternalFenceFeatureFlagBits = (a.uint32 or b.uint32).VkExternalFenceFeatureFlagBits
+func `or`(a, b: VkFenceImportFlagBits): VkFenceImportFlagBits = (a.uint32 or b.uint32).VkFenceImportFlagBits
+func `or`(a, b: VkPeerMemoryFeatureFlagBits): VkPeerMemoryFeatureFlagBits = (a.uint32 or b.uint32).VkPeerMemoryFeatureFlagBits
+func `or`(a, b: VkMemoryAllocateFlagBits): VkMemoryAllocateFlagBits = (a.uint32 or b.uint32).VkMemoryAllocateFlagBits
+func `or`(a, b: VkSubgroupFeatureFlagBits): VkSubgroupFeatureFlagBits = (a.uint32 or b.uint32).VkSubgroupFeatureFlagBits
 
 
 # Loader
