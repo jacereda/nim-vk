@@ -14353,6 +14353,63 @@ proc mkVkFramebufferAttachmentsCreateInfo*(
   result.pAttachmentImageInfos = pAttachmentImageInfos
 
 
+# Bit ops
+func or(a, b: VkFramebufferCreateFlagBits): VkFramebufferCreateFlagBits {.borrow.}
+func or(a, b: VkRenderPassCreateFlagBits): VkRenderPassCreateFlagBits {.borrow.}
+func or(a, b: VkSamplerCreateFlagBits): VkSamplerCreateFlagBits {.borrow.}
+func or(a, b: VkPipelineCacheCreateFlagBits): VkPipelineCacheCreateFlagBits {.borrow.}
+func or(a, b: VkPipelineShaderStageCreateFlagBits): VkPipelineShaderStageCreateFlagBits {.borrow.}
+func or(a, b: VkDescriptorSetLayoutCreateFlagBits): VkDescriptorSetLayoutCreateFlagBits {.borrow.}
+func or(a, b: VkDeviceQueueCreateFlagBits): VkDeviceQueueCreateFlagBits {.borrow.}
+func or(a, b: VkBufferCreateFlagBits): VkBufferCreateFlagBits {.borrow.}
+func or(a, b: VkBufferUsageFlagBits): VkBufferUsageFlagBits {.borrow.}
+func or(a, b: VkColorComponentFlagBits): VkColorComponentFlagBits {.borrow.}
+func or(a, b: VkCommandPoolCreateFlagBits): VkCommandPoolCreateFlagBits {.borrow.}
+func or(a, b: VkCommandPoolResetFlagBits): VkCommandPoolResetFlagBits {.borrow.}
+func or(a, b: VkCommandBufferResetFlagBits): VkCommandBufferResetFlagBits {.borrow.}
+func or(a, b: VkCommandBufferUsageFlagBits): VkCommandBufferUsageFlagBits {.borrow.}
+func or(a, b: VkCullModeFlagBits): VkCullModeFlagBits {.borrow.}
+func or(a, b: VkFenceCreateFlagBits): VkFenceCreateFlagBits {.borrow.}
+func or(a, b: VkFormatFeatureFlagBits): VkFormatFeatureFlagBits {.borrow.}
+func or(a, b: VkImageAspectFlagBits): VkImageAspectFlagBits {.borrow.}
+func or(a, b: VkImageCreateFlagBits): VkImageCreateFlagBits {.borrow.}
+func or(a, b: VkImageUsageFlagBits): VkImageUsageFlagBits {.borrow.}
+func or(a, b: VkImageViewCreateFlagBits): VkImageViewCreateFlagBits {.borrow.}
+func or(a, b: VkMemoryHeapFlagBits): VkMemoryHeapFlagBits {.borrow.}
+func or(a, b: VkAccessFlagBits): VkAccessFlagBits {.borrow.}
+func or(a, b: VkMemoryPropertyFlagBits): VkMemoryPropertyFlagBits {.borrow.}
+func or(a, b: VkPipelineCreateFlagBits): VkPipelineCreateFlagBits {.borrow.}
+func or(a, b: VkQueryControlFlagBits): VkQueryControlFlagBits {.borrow.}
+func or(a, b: VkQueryPipelineStatisticFlagBits): VkQueryPipelineStatisticFlagBits {.borrow.}
+func or(a, b: VkQueryResultFlagBits): VkQueryResultFlagBits {.borrow.}
+func or(a, b: VkQueueFlagBits): VkQueueFlagBits {.borrow.}
+func or(a, b: VkShaderStageFlagBits): VkShaderStageFlagBits {.borrow.}
+func or(a, b: VkSparseMemoryBindFlagBits): VkSparseMemoryBindFlagBits {.borrow.}
+func or(a, b: VkStencilFaceFlagBits): VkStencilFaceFlagBits {.borrow.}
+func or(a, b: VkPipelineStageFlagBits): VkPipelineStageFlagBits {.borrow.}
+func or(a, b: VkSparseImageFormatFlagBits): VkSparseImageFormatFlagBits {.borrow.}
+func or(a, b: VkSampleCountFlagBits): VkSampleCountFlagBits {.borrow.}
+func or(a, b: VkAttachmentDescriptionFlagBits): VkAttachmentDescriptionFlagBits {.borrow.}
+func or(a, b: VkDescriptorPoolCreateFlagBits): VkDescriptorPoolCreateFlagBits {.borrow.}
+func or(a, b: VkDependencyFlagBits): VkDependencyFlagBits {.borrow.}
+func or(a, b: VkSubpassDescriptionFlagBits): VkSubpassDescriptionFlagBits {.borrow.}
+func or(a, b: VkResolveModeFlagBits): VkResolveModeFlagBits {.borrow.}
+func or(a, b: VkDescriptorBindingFlagBits): VkDescriptorBindingFlagBits {.borrow.}
+func or(a, b: VkSemaphoreWaitFlagBits): VkSemaphoreWaitFlagBits {.borrow.}
+func or(a, b: VkShaderModuleCreateFlagBits): VkShaderModuleCreateFlagBits {.borrow.}
+func or(a, b: VkExternalMemoryHandleTypeFlagBits): VkExternalMemoryHandleTypeFlagBits {.borrow.}
+func or(a, b: VkExternalMemoryFeatureFlagBits): VkExternalMemoryFeatureFlagBits {.borrow.}
+func or(a, b: VkExternalSemaphoreHandleTypeFlagBits): VkExternalSemaphoreHandleTypeFlagBits {.borrow.}
+func or(a, b: VkExternalSemaphoreFeatureFlagBits): VkExternalSemaphoreFeatureFlagBits {.borrow.}
+func or(a, b: VkSemaphoreImportFlagBits): VkSemaphoreImportFlagBits {.borrow.}
+func or(a, b: VkExternalFenceHandleTypeFlagBits): VkExternalFenceHandleTypeFlagBits {.borrow.}
+func or(a, b: VkExternalFenceFeatureFlagBits): VkExternalFenceFeatureFlagBits {.borrow.}
+func or(a, b: VkFenceImportFlagBits): VkFenceImportFlagBits {.borrow.}
+func or(a, b: VkPeerMemoryFeatureFlagBits): VkPeerMemoryFeatureFlagBits {.borrow.}
+func or(a, b: VkMemoryAllocateFlagBits): VkMemoryAllocateFlagBits {.borrow.}
+func or(a, b: VkSubgroupFeatureFlagBits): VkSubgroupFeatureFlagBits {.borrow.}
+
+
 # Loader
 var loadProc*: proc(inst: VkInstance, procName: cstring): pointer
 
