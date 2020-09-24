@@ -14132,6 +14132,8 @@ proc mkVkFramebufferAttachmentsCreateInfo*(
 
 # Helpers
 converter toVkDeviceSize*(x: int): VkDeviceSize = x.VkDeviceSize
+func ulen*[N,T](x: array[N,T]): uint32 = x.len.uint32
+func ulen*[T](x: seq[T]): uint32 = x.len.uint32
 
 # Loader
 var loadProc*: proc(inst: VkInstance, procName: cstring): pointer
