@@ -14130,6 +14130,9 @@ proc mkVkFramebufferAttachmentsCreateInfo*(
   result.pAttachmentImageInfos = pAttachmentImageInfos
 
 
+# Helpers
+converter toVkDeviceSize*(x: int): VkDeviceSize = x.VkDeviceSize
+
 # Loader
 var loadProc*: proc(inst: VkInstance, procName: cstring): pointer
 
