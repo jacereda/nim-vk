@@ -6824,8 +6824,8 @@ proc mkDebugMarkerMarkerInfoEXT*(
 proc mkDedicatedAllocationMemoryAllocateInfoNV*(
   sType: StructureType = STRUCTURE_TYPE_DEDICATED_ALLOCATION_MEMORY_ALLOCATE_INFO_NV,
   pNext: pointer = nil,
-  image: Image = nil,
-  buffer: Buffer = nil,
+  image: Image = Image(nil),
+  buffer: Buffer = Buffer(nil),
   ) : DedicatedAllocationMemoryAllocateInfoNV =
   result.sType = sType
   result.pNext = pNext
@@ -7315,7 +7315,7 @@ proc mkDeviceGroupBindSparseInfo*(
 proc mkImageSwapchainCreateInfoKHR*(
   sType: StructureType = STRUCTURE_TYPE_IMAGE_SWAPCHAIN_CREATE_INFO_KHR,
   pNext: pointer = nil,
-  swapchain: SwapchainKHR = nil,
+  swapchain: SwapchainKHR = SwapchainKHR(nil),
   ) : ImageSwapchainCreateInfoKHR =
   result.sType = sType
   result.pNext = pNext
@@ -7337,8 +7337,8 @@ proc mkAcquireNextImageInfoKHR*(
   pNext: pointer = nil,
   swapchain: SwapchainKHR ,
   timeout: uint64 ,
-  semaphore: Semaphore = nil,
-  fence: Fence = nil,
+  semaphore: Semaphore,
+  fence: Fence = Fence(nil),
   deviceMask: uint32 ,
   ) : AcquireNextImageInfoKHR =
   result.sType = sType
@@ -7556,8 +7556,8 @@ proc mkPhysicalDevicePointClippingProperties*(
 proc mkMemoryDedicatedAllocateInfo*(
   sType: StructureType = STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO,
   pNext: pointer = nil,
-  image: Image = nil,
-  buffer: Buffer = nil,
+  image: Image = Image(nil),
+  buffer: Buffer = Buffer(nil),
   ) : MemoryDedicatedAllocateInfo =
   result.sType = sType
   result.pNext = pNext
@@ -8402,7 +8402,7 @@ proc mkImageViewHandleInfoNVX*(
   pNext: pointer = nil,
   imageView: ImageView ,
   descriptorType: DescriptorType ,
-  sampler: Sampler = nil,
+  sampler: Sampler = Sampler(nil),
   ) : ImageViewHandleInfoNVX =
   result.sType = sType
   result.pNext = pNext
@@ -8887,7 +8887,7 @@ proc mkImageFormatProperties*(
   result.maxResourceSize = maxResourceSize
 
 proc mkDescriptorBufferInfo*(
-  buffer: Buffer = nil,
+  buffer: Buffer = Buffer(nil),
   offset: DeviceSize ,
   range: DeviceSize ,
   ) : DescriptorBufferInfo =
@@ -9119,7 +9119,7 @@ proc mkBufferCopy*(
 proc mkSparseMemoryBind*(
   resourceOffset: DeviceSize ,
   size: DeviceSize ,
-  memory: DeviceMemory = nil,
+  memory: DeviceMemory = DeviceMemory(nil),
   memoryOffset: DeviceSize ,
   flags: SparseMemoryBindFlags = {},
   ) : SparseMemoryBind =
@@ -9133,7 +9133,7 @@ proc mkSparseImageMemoryBind*(
   subresource: ImageSubresource ,
   offset: Offset3D ,
   extent: Extent3D ,
-  memory: DeviceMemory = nil,
+  memory: DeviceMemory = DeviceMemory(nil),
   memoryOffset: DeviceSize ,
   flags: SparseMemoryBindFlags = {},
   ) : SparseImageMemoryBind =
@@ -9327,7 +9327,7 @@ proc mkComputePipelineCreateInfo*(
   flags: PipelineCreateFlags = {},
   stage: PipelineShaderStageCreateInfo ,
   layout: PipelineLayout ,
-  basePipelineHandle: Pipeline = nil,
+  basePipelineHandle: Pipeline = Pipeline(nil),
   basePipelineIndex: int32 ,
   ) : ComputePipelineCreateInfo =
   result.sType = sType
@@ -9542,7 +9542,7 @@ proc mkGraphicsPipelineCreateInfo*(
   layout: PipelineLayout ,
   renderPass: RenderPass ,
   subpass: uint32 ,
-  basePipelineHandle: Pipeline = nil,
+  basePipelineHandle: Pipeline = Pipeline(nil),
   basePipelineIndex: int32 ,
   ) : GraphicsPipelineCreateInfo =
   result.sType = sType
@@ -9657,9 +9657,9 @@ proc mkCommandPoolCreateInfo*(
 proc mkCommandBufferInheritanceInfo*(
   sType: StructureType = STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_INFO,
   pNext: pointer = nil,
-  renderPass: RenderPass = nil,
+  renderPass: RenderPass = RenderPass(nil),
   subpass: uint32 ,
-  framebuffer: Framebuffer = nil,
+  framebuffer: Framebuffer = Framebuffer(nil),
   occlusionQueryEnable: Bool32 ,
   queryFlags: QueryControlFlags = {},
   pipelineStatistics: QueryPipelineStatisticFlags = {},
@@ -10452,7 +10452,7 @@ proc mkSwapchainCreateInfoKHR*(
   compositeAlpha: CompositeAlphaFlagBitsKHR ,
   presentMode: PresentModeKHR ,
   clipped: Bool32 ,
-  oldSwapchain: SwapchainKHR = nil,
+  oldSwapchain: SwapchainKHR = SwapchainKHR(nil),
   ) : SwapchainCreateInfoKHR =
   result.sType = sType
   result.pNext = pNext
@@ -10634,7 +10634,7 @@ proc mkIndirectCommandsLayoutTokenNV*(
   offset: uint32 ,
   vertexBindingUnit: uint32 ,
   vertexDynamicStride: Bool32 ,
-  pushconstantPipelineLayout: PipelineLayout = nil,
+  pushconstantPipelineLayout: PipelineLayout = PipelineLayout(nil),
   pushconstantShaderStageFlags: ShaderStageFlags = {},
   pushconstantOffset: uint32 ,
   pushconstantSize: uint32 ,
@@ -10690,9 +10690,9 @@ proc mkGeneratedCommandsInfoNV*(
   preprocessBuffer: Buffer ,
   preprocessOffset: DeviceSize ,
   preprocessSize: DeviceSize ,
-  sequencesCountBuffer: Buffer = nil,
+  sequencesCountBuffer: Buffer = Buffer(nil),
   sequencesCountOffset: DeviceSize = 0.DeviceSize,
-  sequencesIndexBuffer: Buffer = nil,
+  sequencesIndexBuffer: Buffer = Buffer(nil),
   sequencesIndexOffset: DeviceSize = 0.DeviceSize,
   ) : GeneratedCommandsInfoNV =
   result.sType = sType
@@ -12406,7 +12406,7 @@ proc mkRayTracingPipelineCreateInfoNV*(
   pGroups: ptr RayTracingShaderGroupCreateInfoNV ,
   maxRecursionDepth: uint32 ,
   layout: PipelineLayout ,
-  basePipelineHandle: Pipeline = nil,
+  basePipelineHandle: Pipeline = Pipeline(nil),
   basePipelineIndex: int32 ,
   ) : RayTracingPipelineCreateInfoNV =
   result.sType = sType
@@ -12433,7 +12433,7 @@ proc mkRayTracingPipelineCreateInfoKHR*(
   libraries: PipelineLibraryCreateInfoKHR ,
   pLibraryInterface: ptr RayTracingPipelineInterfaceCreateInfoKHR = nil,
   layout: PipelineLayout ,
-  basePipelineHandle: Pipeline = nil,
+  basePipelineHandle: Pipeline = Pipeline(nil),
   basePipelineIndex: int32 ,
   ) : RayTracingPipelineCreateInfoKHR =
   result.sType = sType
@@ -12453,16 +12453,16 @@ proc mkRayTracingPipelineCreateInfoKHR*(
 proc mkGeometryTrianglesNV*(
   sType: StructureType = STRUCTURE_TYPE_GEOMETRY_TRIANGLES_NV,
   pNext: pointer = nil,
-  vertexData: Buffer = nil,
+  vertexData: Buffer = Buffer(nil),
   vertexOffset: DeviceSize ,
   vertexCount: uint32 ,
   vertexStride: DeviceSize ,
   vertexFormat: Format ,
-  indexData: Buffer = nil,
+  indexData: Buffer = Buffer(nil),
   indexOffset: DeviceSize ,
   indexCount: uint32 ,
   indexType: IndexType ,
-  transformData: Buffer = nil,
+  transformData: Buffer = Buffer(nil),
   transformOffset: DeviceSize ,
   ) : GeometryTrianglesNV =
   result.sType = sType
@@ -12482,7 +12482,7 @@ proc mkGeometryTrianglesNV*(
 proc mkGeometryAABBNV*(
   sType: StructureType = STRUCTURE_TYPE_GEOMETRY_AABB_NV,
   pNext: pointer = nil,
-  aabbData: Buffer = nil,
+  aabbData: Buffer = Buffer(nil),
   numAABBs: uint32 ,
   stride: uint32 ,
   offset: DeviceSize ,
@@ -12585,7 +12585,7 @@ proc mkPhysicalDeviceRayTracingFeaturesKHR*(
   result.rayTracingPrimitiveCulling = rayTracingPrimitiveCulling
 
 proc mkStridedBufferRegionKHR*(
-  buffer: Buffer = nil,
+  buffer: Buffer = Buffer(nil),
   offset: DeviceSize ,
   stride: DeviceSize ,
   size: DeviceSize ,
@@ -13611,7 +13611,7 @@ proc mkAccelerationStructureBuildGeometryInfoKHR*(
   `type`: AccelerationStructureTypeKHR ,
   flags: BuildAccelerationStructureFlagsKHR = {},
   update: Bool32 ,
-  srcAccelerationStructure: AccelerationStructureKHR = nil,
+  srcAccelerationStructure: AccelerationStructureKHR = AccelerationStructureKHR(nil),
   dstAccelerationStructure: AccelerationStructureKHR ,
   geometryArrayOfPointers: Bool32 ,
   geometryCount: uint32 = 0.uint32,
